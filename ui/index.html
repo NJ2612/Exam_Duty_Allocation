@@ -4,70 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exam Duty Allocator</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-all">
-  <div class="max-w-3xl mx-auto p-6">
-    <div class="flex justify-between items-center mb-6">
-      <h1 class="text-3xl font-bold">📝 Exam Duty Allocator</h1>
-    </div>
+<body>
+  <div class="container">
+    <h1>Exam Duty Allocator</h1>
 
-    <div class="space-y-6">
-      <!-- Teachers Input -->
-      <div>
-        <label class="block font-semibold mb-1" for="teachersFileInput">👩‍🏫 Upload Teachers</label>
-        <input type="file" id="teachersFileInput" accept=".csv"
-          class="w-full bg-white dark:bg-gray-800 text-sm rounded border border-gray-300 dark:border-gray-700 px-3 py-2" />
+    <section>
+      <label for="teachersFileInput">Upload Teachers</label>
+      <input type="file" id="teachersFileInput" accept=".csv" />
+    </section>
+
+    <section>
+      <label for="roomsFileInput">Upload Rooms</label>
+      <input type="file" id="roomsFileInput" accept=".csv" />
+    </section>
+
+    <section>
+      <label for="examTypeSelect">Exam Type</label>
+      <select id="examTypeSelect">
+        <option value="mid-sem">Mid Semester</option>
+        <option value="end-sem">End Semester</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="examDatesInput">Upload Examination Dates</label>
+      <input type="file" id="examDatesInput" accept=".csv" />
+    </section>
+
+    <button id="allocateBtn">Allocate Duties (Current Logic)</button>
+
+    <hr />
+
+    <section>
+      <h2>Results</h2>
+      <pre id="resultsOutput"></pre>
+      <div class="flex-row">
+        <button id="downloadExcelBtn" class="green-btn">Download as Excel</button>
+        <button id="downloadPdfBtn" class="red-btn">Download as PDF</button>
+        <button id="downloadFacultyScheduleBtn">Download Faculty Duty Schedule (Excel)</button>
+        <button id="downloadRoomWiseBtn">Download Room-wise Allocation (Excel)</button>
       </div>
-
-      <!-- Rooms Input -->
-      <div>
-        <label class="block font-semibold mb-1" for="roomsFileInput">🏫 Upload Rooms </label>
-        <input type="file" id="roomsFileInput" accept=".csv"
-          class="w-full bg-white dark:bg-gray-800 text-sm rounded border border-gray-300 dark:border-gray-700 px-3 py-2" />
-      </div>
-
-      <!-- Exam Type Dropdown -->
-      <div>
-        <label class="block font-semibold mb-1" for="examTypeSelect">📚 Exam Type</label>
-        <select id="examTypeSelect"
-          class="w-full p-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800">
-          <option value="mid-sem">Mid Semester</option>
-          <option value="end-sem">End Semester</option>
-        </select>
-      </div>
-
-      <!-- Exam Dates Input -->
-      <div>
-        <label class="block font-semibold mb-1" for="examDatesInput">📅 Upload Examination Dates</label>
-        <input type="file" id="examDatesInput" accept=".csv"
-          class="w-full bg-white dark:bg-gray-800 text-sm rounded border border-gray-300 dark:border-gray-700 px-3 py-2" />
-      </div>
-
-      <!-- Allocate Button -->
-      <button id="allocateBtn"
-        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
-        🚀 Allocate Duties (Current Logic)
-      </button>
-
-      <hr class="border-gray-300 dark:border-gray-600" />
-
-      <!-- Output Section -->
-      <div>
-        <h2 class="text-xl font-bold mt-6 mb-2">📤 Results</h2>
-        <pre id="resultsOutput"
-          class="bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-4 rounded overflow-y-auto max-h-80 text-sm font-mono whitespace-pre-wrap"></pre>
-        <div class="flex gap-4 mt-4">
-          <button id="downloadExcelBtn" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition">Download as Excel</button>
-          <button id="downloadPdfBtn" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">Download as PDF</button>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  <!-- Local JS dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>

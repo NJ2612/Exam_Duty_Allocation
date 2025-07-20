@@ -1,0 +1,290 @@
+FacultyID,S.No.,Name,Gender,Department,Designation
+FAC001,1,Ms. Sriparna Saha,Female,nan,Professor
+FAC002,2,Dr. Bindu Agarwal,Female,nan,Professor
+FAC003,3,Ms. Dhenesh Raj,Female,nan,Associate Professor
+FAC004,4,Ms Amrit Das,Female,Fashion Design,Assistant Professor
+FAC005,5,Ms Shraddha Shukla,Female,Fashion Design,Assistant Professor
+FAC006,6,Mr Prasun Gagan,Male,Fashion Design,Assistant Professor
+FAC007,7,Ms Harpreet Kaur,Female,Fashion Design,Lecturer
+FAC008,8,Ms Sakshi Rawat,Female,Fashion Design,Lecturer
+FAC009,9,Dr. S.K.Sarkar,Male,Visual Arts (Fine Arts),Professor
+FAC010,10,Dr. Kapil Chowdhury,Male,Visual Arts (Fine Arts),Assistant Professor
+FAC011,11,Mr. Nilothpal Nath,Male,Visual Arts (Fine Arts),Assistant Professor
+FAC012,12,Mr Vishnu Kumar,Male,Visual Arts (Fine Arts),Assistant Professor
+FAC013,13,Mr. Sanjay Painuly,Male,Visual Arts (Animation & Gaming),Assistant Professor
+FAC014,14,Mr Rohit Kumar Roy,Male,Visual Arts (Animation & Gaming),Assistant Professor
+FAC015,15,Ms Silvia Narzary,Female,Visual Arts (Animation & Gaming),Assistant Professor
+FAC016,16,Ms Samarpita Ghatak,Female,Visual Arts (Animation & Gaming),Assistant Professor
+FAC017,17,Mr Pranjal Dhasmana,Male,Visual Arts (Animation & Gaming),Senior Lecturer
+FAC018,18,Ms Shrishti Baluni,Female,Visual Arts (Animation & Gaming),Lecturer
+FAC019,19,Dr. Vipin Kumar,Male,Humanities,Associate Professor
+FAC020,20,Dr. Laxmi Rawat Chauhan,Female,Humanities,Associate Professor
+FAC021,21,Dr Animesh Sharma,Male,Humanities (PDP),Associate Professor
+FAC022,22,Mr. Pramod Thapliyal,Male,Humanities,Assistant Professor
+FAC023,23,Mr. Vinay Devrani,Male,Prof Comm,Assistant Professor
+FAC024,24,Dr. Shipra Joshi,Female,Humanities,Assistant Professor
+FAC025,25,Ms. Yachna Suryavanshi,Female,Humanities,Assistant Professor
+FAC026,26,Mr Himanshu Negi,Male,Humanities,Assistant Professor
+FAC027,27,Mr Ankur Sharma,Male,Humanities (PDP),Assistant Professor
+FAC028,28,Ms Geetika Bhatia,Female,Humanities (PDP),Assistant Professor
+FAC029,29,Mr Vishal Chhabra,Male,Humanities (PDP),Assistant Professor
+FAC030,30,Mr Anurag Chauhan,Male,Humanities (PDP),Assistant Professor
+FAC031,31,Mr. Sandeep Bhatt,Male,MMC,Assistant Professor
+FAC032,32,Mr. Vipul Tiwari,Male,MMC,Assistant Professor
+FAC033,33,Dr Ankita Uniyal,Female,MMC,Assistant Professor
+FAC034,34,Mr. Girija Shankar Semuwal,Male,MMC,Assistant Professor
+FAC035,35,Dr. Aakriti Dhoundiyal,Female,MMC,Assistant Professor
+FAC036,36,Dr Anubha Pundir,Female,PDP,Associate Professor
+FAC037,37,Dr. Aanchal Sharma,Female,PDP,Assistant Professor
+FAC038,38,Dr. Sulekha Verma,Female,PDP,Assistant Professor
+FAC039,39,Ms. Sakshi Pundir,Female,PDP,Assistant Professor
+FAC040,40,Ms. Shivani Monga,Female,PDP,Assistant Professor
+FAC041,41,Ms. Anshu Sharma,Female,PDP,Assistant Professor
+FAC042,42,Mr. Saurabh Fulara,Male,PDP,Assistant Professor
+FAC043,43,Dr. Ashok Kumar Sahoo,Male,CS&E,Professor
+FAC044,44,Dr. Mahesh Manchanda,Male,CS&E,Professor
+FAC045,45,Dr. Prateek Srivastava,Male,CS&E,Professor
+FAC046,46,Dr Susheela Dahiya,Female,CS&E,Associate Professor
+FAC047,47,Dr Ajay Narayan Shukla,Female,CS&E,Associate Professor
+FAC048,48,Dr. Amit Gupta,Male,CS&E,Associate Professor
+FAC049,49,Dr. Vikrant Sharma,Male,CS&E,Assistant professor
+FAC050,50,Dr. Saumitra Chattopadhyay,Male,CS&E,Assistant Professor
+FAC051,51,Ms. Manika Manwal,Female,CS&E,Assistant Professor
+FAC052,52,Dr. Rishika Yadav,Female,CS&E,Assistant Professor
+FAC053,53,Ms. Manisha Aeri,Female,CS&E,Assistant Professor
+FAC054,54,Mr. Sushant Chamoli,Male,CS&E,Assistant Professor
+FAC055,55,Mr. Samir Rana,Male,CS&E,Assistant Professor
+FAC056,56,Ms. Ayushi Jain,Female,CS&E,Assistant Professor
+FAC057,57,Ms. Preeti Chaudhary,Female,CS&E,Assistant Professor
+FAC058,58,Dr Chandradeep Bhatt,Male,CS&E,Assistant Professor
+FAC059,59,Mr. Akash Chauhan,Male,CS&E,Assistant Professor
+FAC060,60,Mr. Chetan Pandey,Male,CS&E,Assistant Professor
+FAC061,61,Mr. Abhishek Sharma,Male,CS&E(PDP),Assistant Professor
+FAC062,62,Mr. Rahul Chauhan,Male,CS&E,Assistant Professor
+FAC063,63,Ms. Richa Gupta,Female,CS&E,Assistant Professor
+FAC064,64,Dr. Devesh Tiwari,Male,CS&E,Assistant Professor
+FAC065,65,Mr.Saksham Mittal,Male,CS&E,Assistant Professor
+FAC066,66,Mr. Mukesh Kumar,Male,CS&E,Assistant Professor
+FAC067,67,Mr. Deepak Upadhyay,Male,CS&E,Assistant Professor
+FAC068,68,Ms. Preeti Badhani,Female,CS&E,Assistant Professor
+FAC069,69,Mr Kapil Rajput,Male,CS&E,Assistant Professor
+FAC070,70,Ms. Pallavi Semwal,Female,CS&E,Assistant Professor
+FAC071,71,Mr Nitin Thapliyal,Male,CS&E,Assistant Professor
+FAC072,72,Ms Sonal Malhotra,Female,CS&E,Assistant Professor
+FAC073,73,Ms Shagun Singh Dasawat,Female,CS&E,Assistant Professor
+FAC074,74,Ms Shraddha Kaparwan,Female,CS&E,Assistant Professor
+FAC075,75,Dr. Seema Gulati,Female,CS&E,Assistant Professor
+FAC076,76,Ms Stuti Bhatt,Female,CS&E,Assistant Professor
+FAC077,77,Mr Shivashish Dhoundiyal,Male,CS&E,Assistant Professor
+FAC078,78,Dr. Bina Bhandari,Female,CS&E,Assistant Professor
+FAC079,79,Ms Priyanshi Aggarwal,Female,CS&E,Lecturer
+FAC080,80,Ms Swati Joshi,Female,CS&E,Lecturer
+FAC081,81,Mr Aayush Kumar,Male,CS&E,Lecturer
+FAC082,82,Mr Tushar Sharma,Male,CS&E,Lecturer
+FAC083,83,Mr Nishant Bhandari,Male,CS&E,Lecturer
+FAC084,84,Mr Prateek Kumar,Male,CS&E,Lecturer
+FAC085,85,Dr. Raj Kishor Bisht,Male,SOC,Professor
+FAC086,86,Dr Sunil Shukla,Male,SOC,Professor
+FAC087,87,Dr. Luxmi Sapra,Female,SOC,Associate Professor
+FAC088,88,Dr Alka Pant,Female,SOC,Associate Professor
+FAC089,89,Mr. Amit Juyal,Male,SOC,Assistant Professor
+FAC090,90,Dr. Anupriya,Female,SOC,Assistant Professor
+FAC091,91,Mr. Deepak Singh Rana,Male,SOC,Assistant Professor
+FAC092,92,Mr. Aditya Harbola,Male,SOC,Assistant Professor
+FAC093,93,Mrs. Nidhi Mehra,Female,SOC,Assistant Professor
+FAC094,94,Mrs. Deepti Negi,Female,SOC,Assistant Professor
+FAC095,95,Ms. Divya Kapil,Female,SOC,Assistant Professor
+FAC096,96,Ms. Tabish Rao,Female,SOC,Assistant Professor
+FAC097,97,Ms. Kajal Aggarwal,Female,SOC,Assistant Professor
+FAC098,98,Mr. Neeraj Panwar,Male,SOC,Assistant Professor
+FAC099,99,Dr. Jyoti Parsola,Female,SOC,Assistant Professor
+FAC100,100,Ms. Nidhi Joshi,Female,SOC,Assistant Professor
+FAC101,101,Dr. Kamred Udham Singh,male,SOC,Assistant Professor
+FAC102,102,Ms. Atika Gupta,Female,SOC,Assistant Professor
+FAC103,103,Dr Himani Maheshwari,female,SOC,Assistant Professor
+FAC104,104,Ms Shobha Aswal,Female,SOC,Assistant Professor
+FAC105,105,Ms Anamika Arora,Female,SOC,Assistant Professor
+FAC106,106,Mr Gaurav Sharma,Male,SOC,Assistant Professor
+FAC107,107,Mr Deepak Agarwal,Male,SOC,Assistant Professor
+FAC108,108,Ms. Tamanna Rawat,Female,SOC,Assistant Professor(Ad Hoc)
+FAC109,109,Ms. Manshi Singh,Female,SOC,Assistant Professor(Ad Hoc)
+FAC110,110,Mr. Mohit Chauhan,Male,SOC,Assistant Professor(Ad Hoc)
+FAC111,111,Ms. Pooja Gunwant,Female,SOC,Assistant Professor(Ad Hoc)
+FAC112,112,Mr Gaurav Dobriyal,Male,SOC (PDP),Assistant Professor
+FAC113,113,Ms. Ritiksha Danu,Female,Civil,Assistant Professor
+FAC114,114,Mr. Ankit Nainwal,Male,Civil,Assistant Professor
+FAC115,115,Dr Pramod Tiwari,Male,Civil,Assistant Professor
+FAC116,116,Mr. Bhaskar Nautiyal,Male,ECE,Associate Professor
+FAC117,117,Mr. Rajeev Gupta,Male,ECE,Assistant Professor
+FAC118,118,Mr. Divesh Kumar,Male,ECE,Assistant Professor
+FAC119,119,Dr. Vivek Chamoli,Male,ECE,Assistant Professor
+FAC120,120,Dr Jyoti Kandpal,Female,ECE,Assistant Professor
+FAC121,121,Ms Jyoti Ramola,Female,ECE,Assistant Professor
+FAC122,122,Dr. Mohit Payal,Male,ECE,Assistant Professor
+FAC123,123,Dr Arun Pratap Singh Rathod,Male,ECE,Assistant Professor
+FAC124,124,Dr Saurabh Agarwal,Male,ECE,Assistant Professor
+FAC125,125,Mrs. Priyanka,Female,EEE,Assistant Professor
+FAC126,126,Ms. Ishita Uniyal,Female,EEE,Assistant Professor
+FAC127,127,Ms. Deeksha Naithani,Female,EEE,Assistant Professor
+FAC128,128,Ms. Vaishally Dogra,Female,ME,Assistant Professor
+FAC129,129,Mr Rahul Keshari,Male,ME,Assistant Professor
+FAC130,130,Dr. Deepak Gupta,Male,ME,Assistant Professor (Research)
+FAC131,131,Dr Sateesh Kumar Yadav,male,ME,Assistant Professor
+FAC132,132,Dr. Soni Mishra,Female,PHYSICS,Associate Professor
+FAC133,133,Dr. Sumit Pokhriyal,Male,PHYSICS,Assistant Professor
+FAC134,134,Dr Gaurav Gautam,male,PHYSICS,Assistant Professor
+FAC135,135,Dr. Sandeep Kumar,Male,MATHS,Professor
+FAC136,136,Dr. Robin,Male,MATHS,Associate Professor
+FAC137,137,Dr. Manoj Kumar,Male,MATHS,Associate Professor
+FAC138,138,Dr. Rajesh Kumar Tripathi,Male,MATHS,Associate Professor
+FAC139,139,Dr. Rakesh Chandra Bhadula,Male,MATHS,Associate Professor
+FAC140,140,Dr Vineet Bhatt,male,MATHS,Associate Professor
+FAC141,141,Dr. Akshay Kumar,Male,MATHS,Assistant Professor
+FAC142,142,Dr. Shilpy Tayal,Female,MATHS,Assistant Professor
+FAC143,143,Dr. Anup Singh Negi,male,MATHS,Assistant Professor
+FAC144,144,Dr. Chandan Singh Ujarari,Male,MATHS,Assistant Professor
+FAC145,145,Dr. Ankit Kumar,Male,MATHS,Assistant Professor
+FAC146,146,Dr Rajesh Kumar Mishra,male,MATHS,Assistant Professor
+FAC147,147,Dr. Monika Bisht,Female,MATHS,Assistant Professor
+FAC148,148,Dr Makrand Dhyani,male,MATHS,Assistant Professor
+FAC149,149,Dr Priyanshu Arya,male,MATHS,Assistant Professor
+FAC150,150,Dr Priyanka Almia,female,MATHS,Assistant Professor
+FAC151,151,Dr. Naveen Chandra Talniya,Male,CHEMISTRY,Associate Professor
+FAC152,152,Dr Gurpreet Kaur,female,CHEMISTRY,Associate Professor
+FAC153,153,Dr. Anupriya Adhikari,Female,CHEMISTRY,Assistant Professor
+FAC154,154,Dr. Avnish Chauhan,Male,EVS,Associate Professor
+FAC155,155,Dr. Anita Singh,Female,Agriculture,Associate Professor
+FAC156,156,Dr. Balwant Singh Rawat,Male,Agriculture,Associate  Professor
+FAC157,157,Dr. Vivek Kumar Pathak,Male,Agriculture,Associate  Professor
+FAC158,158,Dr. Pooja Bhatt,Female,Agriculture,Assistant Professor
+FAC159,159,Dr.Rowndel Khwairakpam,male,Agriculture,Assistant Professor
+FAC160,160,Dr. Supriya Gupta,Female,Agriculture,Assistant Professor
+FAC161,161,Dr. Neelam Basera,Female,Agriculture,Assistant Professor
+FAC162,162,Dr. Ashish Kaushal,Male,Agriculture,Assistant Professor
+FAC163,163,Dr Pallavi Joshi,female,Agriculture,Assistant Professor
+FAC164,164,Dr. Pallavi Bhatt,Female,Agriculture,Assistant Professor
+FAC165,165,Dr Sayantika Bhattacharya,female,Agriculture,Assistant Professor
+FAC166,166,Dr Kumar Gaurav,male,Agriculture,Assistant Professor
+FAC167,167,Dr. Nikita Chauhan,Female,Agriculture,Assistant Professor
+FAC168,168,Ms Vriksha Singh,Female,Agriculture,Lecturer
+FAC169,169,Dr Arun Kumar,male,Pharmacy,Professor
+FAC170,170,Dr. Dinesh Puri,Male,Pharmacy,Professor
+FAC171,171,Dr Ranjana,female,Pharmacy,Professor
+FAC172,172,Dr. Archana Dhyani,Female,Pharmacy,Associate Professor
+FAC173,173,Dr. Ahmed Nawaz Khan,Male,Pharmacy,Associate Professor
+FAC174,174,Dr .Reenoo Jauhari,female,Pharmacy,Associate Professor
+FAC175,175,Dr Deepika Raina Negi,female,Pharmacy,Associate Professor
+FAC176,176,Dr Vikrant Abbot,male,Pharmacy,Associate Professor
+FAC177,177,Ms. Deepti M Sati,Female,Pharmacy,Assistant Professor
+FAC178,178,Ms. Prachi Singh,Female,Pharmacy,Assistant Professor
+FAC179,179,Ms. Ankita Kalra,Female,Pharmacy,Assistant Professor
+FAC180,180,Mr. Sachin Kumar,Male,Pharmacy,Assistant Professor
+FAC181,181,Mr Gaurav,Male,Pharmacy,Assistant Professor
+FAC182,182,Moh Aijaz,Male,Pharmacy,Assistant Professor
+FAC183,183,Dr Indu Singh,female,Pharmacy,Assistant Professor
+FAC184,184,Prof. (Dr.) Ajay Kumar Saini,male,SOM,Professor
+FAC185,185,Dr. Ajay Sharma,Male,SOM,Professor
+FAC186,186,Dr Vikas Tyagi,male,SOM,Professor
+FAC187,187,Dr. Shipra Gupta,Female,SOM,Professor
+FAC188,188,Dr. Pradeep Joshi,Male,SOM,Associate Professor
+FAC189,189,Dr. Namrata Prakash,Female,SOM,Associate Professor
+FAC190,190,Dr. Suruchi Sharma,Female,SOM,Associate Professor
+FAC191,191,Dr. Hemant Chauhan,Male,SOM,Associate Professor
+FAC192,192,Dr Mayank Pant,male,SOM,Associate Professor
+FAC193,193,Dr. Raj Kumar Singh,Male,SOM,Assoicate Professor
+FAC194,194,Dr. Shikha Rana,Female,SOM,Associate Professor
+FAC195,195,Dr. Pankaj Agarwal,Male,SOM,Associate Professor
+FAC196,196,Dr Gaurav Chopra,male,SOM,Associate Professor
+FAC197,197,Dr. Omdeep Gupta,Male,SOM,Associate Professor
+FAC198,198,Ms. Smitha Kothari,Female,SOM,Assistant Professor
+FAC199,199,Dr. Sweta Chauhan,Female,SOM,Assistant Professor
+FAC200,200,Dr Harish Kumar,Male,SOM,Assistant Professor
+FAC201,201,Dr.Sargam Bahl,Female,SOM,Assistant Professor
+FAC202,202,Dr. Ritesh Upadhyay,Male,SOM,Assistant Professor
+FAC203,203,Dr. Shilpa Wadhwa,Female,SOM,Assistant Professor
+FAC204,204,Mr. Naveen Negi,Male,SOM,Assistant Professor
+FAC205,205,Ms. Shagufa Ali,Female,SOM,Assistant Professor
+FAC206,206,Ms. Shivani Solanki,Female,SOM,Assistant Professor
+FAC207,207,Mr. Digambar Dhyani,Male,SOM(PDP),Assistant Professor
+FAC208,208,Ms Aditi Singhal,Female,SOM(PDP),Assistant Professor
+FAC209,209,Dr. Shradha Jain,Female,SOM,Assistant Professor
+FAC210,210,Dr. Parvi Bharti Singhal,Female,SOM,Assistant Professor
+FAC211,211,Dr. Megha Sharma,Female,SOM,Assistant Professor
+FAC212,212,Dr Shagun Tyagi,female,SOM,Assistant Professor
+FAC213,213,Mr Monu Bhardwaj,Male,SOM,Assistant Professor
+FAC214,214,Ms. Rohini,Female,SOM,Assistant Professor
+FAC215,215,Mr Karan Kumar,Male,SOM,Assistant Professor
+FAC216,216,Dr Sushant Tomar,male,SOM,Assistant Professor
+FAC217,217,Mr Pranjal Rawat,Male,SOM,Assistant Professor
+FAC218,218,Mr Manish Garg,Male,SOM,Assistant Professor
+FAC219,219,Dr. Vivek Dabral,Male,SOM,Assistant Professor
+FAC220,220,Dr Garima Negi,female,SOM,Assistant Professor
+FAC221,221,Dr Tania Mittal,female,SOM,Assistant Professor
+FAC222,222,Mr. Akhilendra Negi,Male,SOM,Assistant Professor(Ad Hoc)
+FAC223,223,Ms. Amreen Siddiqui,Female,SOM,Assistant Professor(Ad Hoc)
+FAC224,224,Ms. Sweta bagdwal,Female,SOM,Assistant Professor(Ad Hoc)
+FAC225,225,Mr. Bharat Balutia,Male,SOM,Assistant Professor(Ad Hoc)
+FAC226,226,Ms Anam Parveen,Female,SOM,Assistant Professor(Ad Hoc)
+FAC227,227,Ms Nupur Dube,Female,SOM(PDP),Assistant Professor
+FAC228,228,Mr Anshuman Sharma,Male,SOM(PDP),Assistant Professor
+FAC229,229,Prof.(Dr) Rakshit Negi,male,Commerce,Professor
+FAC230,230,Mr Anil Dhasmana,Male,Commerce,Assistant Professor
+FAC231,231,Dr. Amar Singh,Male,Commerce,Associate Professor
+FAC232,232,CA Bijaya Laxmi Thapliyal,Female,Commerce,Assistant Professor
+FAC233,233,Mr. Barun Srivastava,Male,Commerce,Assistant Professor
+FAC234,234,Ms. Neha Rani,Female,Commerce,Assistant Professor
+FAC235,235,CS Dr. Ruchitra Kaparwan,female,Commerce,Assistant Professor
+FAC236,236,Dr Sangeeta Bagga,female,Commerce,Assistant Professor
+FAC237,237,Dr Kumar Arijit,male,School of Vocational Studies,Assistant Professor
+FAC238,238,Dr. Subhash Chander Arora,Male,School of Vocational Studies,Assistant Professor
+FAC239,239,Dr. Krishna Gupta,male,School of Vocational Studies,Assistant Professor
+FAC240,240,Mr. Ankit Purohit,Male,Law,Assistant Professor
+FAC241,241,Ms. Ankita Jakhmola,Female,Law,Assistant Professor
+FAC242,242,Mr Kaushal Pandey,Male,Law,Assistant Professor
+FAC243,243,Mr Rakesh Tiwari,Male,Law,Assistant Professor
+FAC244,244,Mr Aditaya,Male,Law,Assistant Professor
+FAC245,245,Ms Anuradha,Female,Law,Assistant Professor
+FAC246,246,Ms Divya Nautiyal,Female,Law,Assistant Professor
+FAC247,247,Mr Avijit Faujdar,Male,Law,Assistant Professor
+FAC248,248,Ms. Manisha Melkani,Female,Law,Assistant Professor
+FAC249,249,Ms Stuti Bhandari,Female,Law,Assistant Professor
+FAC250,250,Mr Harshit Singh Jadoun,Male,Law,Assistant Professor
+FAC251,251,Dr Manya Gupta,Female,Law,Assistant Professor
+FAC252,252,Ms Divyansha Vasishth,Female,Law,Assistant Professor
+FAC253,253,Rockey Choudhary,female,PHYSICS,Research Scholar
+FAC254,254,Vishakha,Female,PHYSICS,Research Scholar
+FAC255,255,Anirudh Tomar,male,PHYSICS,Research Scholar
+FAC256,256,Avijit Chamoli,male,PHYSICS,Research Scholar
+FAC257,257,Tanushi Sirohi,Female,Fine Arts,Research Scholar
+FAC258,258,Abhilasha Mer,Female,SOM,Research Scholar
+FAC259,259,Rohit Kumar,Male,SOM,Research Scholar
+FAC260,260,Sneha Sharma,Female,SOM,Research Scholar
+FAC261,261,Mohd. Anas Ansari,Male,PHARMACY,Research Scholar
+FAC262,262,Mumtaz Ahmad,Male,PHARMACY,Research Scholar
+FAC263,263,Anshita Agarwal,Female,COMMERCE,Research Scholar
+FAC264,264,Saurabh Bahuguna,Male,MATHEMATICS,Research Scholar
+FAC265,265,Bharat Singh,Male,COMMERCE,Research Scholar
+FAC266,266,Aamir Khan,Male,CSE,Research Scholar
+FAC267,267,Vishesh Sharma,Male,PHYSICS,Research Scholar
+FAC268,268,Manvi Bohra,Female,CSE,Research Scholar
+FAC269,269,Shashank Kailkhura,Male,PHARMACY,Research Scholar
+FAC270,270,Aman Shukla,Male,PHARMACY,Research Scholar
+FAC271,271,Jyoti,Female,COMMERCE,Research Scholar
+FAC272,272,Rishika Jugran,Female,COMMERCE,Research Scholar
+FAC273,273,Aanchal,Female,EVS,Research Scholar
+FAC274,274,Akshay Prasad,Male,MATHEMATICS,Research Scholar
+FAC275,275,Srishti Dafouty,Female,ENGLISH,Research Scholar
+FAC276,276,Divyansh Pandey,Male,COMMERCE,Research Scholar
+FAC277,277,Pragati,Female,COMMERCE,Research Scholar
+FAC278,278,Shristi Singh,Female,PHYSICS,Research Scholar
+FAC279,279,Megha Bhatt,Female,Agriculture,Research Scholar
+FAC280,280,Adharsika Pradhan,Female,Agriculture,Research Scholar
+FAC281,281,Yashi Tyagi,Female,MATHEMATICS,Research Scholar
+FAC282,282,Renu Rawat,Female,MATHEMATICS,Research Scholar
+FAC283,283,Arnima,Female,MATHEMATICS,Research Scholar
+FAC284,284,Reet Bahl,Female,Commerce,Research Scholar
+FAC285,285,Shubra,Female,Fine Arts,Research Scholar
+FAC286,286,Abhishek Benjwal,Male,Law,Research Scholar
+FAC287,287,Garima Singh,Female,Law,Research Scholar
+FAC288,288,Neha Garg,Female,Management,Research Scholar
+
