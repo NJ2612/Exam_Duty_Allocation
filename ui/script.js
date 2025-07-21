@@ -151,7 +151,6 @@ function allocateDutiesWithAvailability(rooms, teachers, examType, date, shiftKe
         let ladyIndex = 0;
         let maleIndex = 0;
         // For CR rooms, avoid assigning the same teacher as previous shift/day
-        let avoidTeacherIds = new Set();
         if (/^CR/i.test(room.name)) {
             Object.keys(teacherRoomHistory).forEach(teacherId => {
                 const history = teacherRoomHistory[teacherId][room.id] || [];
@@ -200,6 +199,61 @@ function allocateDutiesWithAvailability(rooms, teachers, examType, date, shiftKe
                     lastShiftAssigned.set(String(teacher.id), true);
                     if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
                     if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
+                    teacherRoomHistory[teacher.id][room.id].push(shiftKey);
+                    teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
+                    maleIndex++;
+                    allocatedCount++;
+                    assignedMale = true;
+                    assignedTeachers.add(String(teacher.id));
+                    break;
+                }
+                maleIndex++;
+            }
+        }
+        // Assign remaining teachers until requiredTeachers count is met
+        while (allocatedCount < requiredTeachers) {
+            // Try female teachers first
+            while (ladyIndex < ladyTeachers.length && allocatedCount < requiredTeachers) {
+                const teacher = ladyTeachers[ladyIndex];
+                if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
+                    const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
+                    allocations[shiftKey][room.id].push(origTeacher);
+                    lastShiftAssigned.set(String(teacher.id), true);
+                    if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
+                    if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
+                    teacherRoomHistory[teacher.id][room.id].push(shiftKey);
+                    teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
+                    ladyIndex++;
+                    allocatedCount++;
+                    assignedTeachers.add(String(teacher.id));
+                    break;
+                }
+                ladyIndex++;
+            }
+            // Then try male teachers
+            while (maleIndex < maleTeachers.length && allocatedCount < requiredTeachers) {
+                const teacher = maleTeachers[maleIndex];
+                if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
+                    const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
+                    allocations[shiftKey][room.id].push(origTeacher);
+                    lastShiftAssigned.set(String(teacher.id), true);
+                    if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
+                    if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
+                    teacherRoomHistory[teacher.id][room.id].push(shiftKey);
+                    teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
+                    maleIndex++;
+                    allocatedCount++;
+                    assignedTeachers.add(String(teacher.id));
+                    break;
+                }
+                maleIndex++;
+            }
+            // If no more teachers available, break to avoid infinite loop
+            if ((ladyIndex >= ladyTeachers.length) && (maleIndex >= maleTeachers.length)) {
+                break;
+            }
+        }
+    });
     return allocations;
 }
 
