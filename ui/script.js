@@ -120,6 +120,10 @@ function allocateDutiesWithAvailability(rooms, teachers, examType, date, shiftKe
     }
     rooms.forEach(room => {
         allocations[shiftKey][room.id] = [];
+        if (room.students === 0) {
+            // No teachers assigned if strength is zero
+            return;
+        }
         let requiredTeachers = 1;
         if (examType === "mid-sem") {
             if (room.name === "LT 402") {
@@ -141,6 +145,7 @@ function allocateDutiesWithAvailability(rooms, teachers, examType, date, shiftKe
             } else {
                 requiredTeachers = room.students > 80 ? 3 : 2;
             }
+            
         }
         let allocatedCount = 0;
         let ladyIndex = 0;
@@ -195,129 +200,6 @@ function allocateDutiesWithAvailability(rooms, teachers, examType, date, shiftKe
                     lastShiftAssigned.set(String(teacher.id), true);
                     if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
                     if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                    teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                    teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                    maleIndex++;
-                    allocatedCount++;
-                    assignedMale = true;
-                    assignedTeachers.add(String(teacher.id));
-                    break;
-                }
-                maleIndex++;
-            }
-        }
-        // --- END NEW ---
-
-        while (allocatedCount < requiredTeachers) {
-            let assigned = false;
-            // Assign a lady teacher if not already assigned and one is available
-            if (allocatedCount === 0 && ladyTeachers.length > 0 && !assignedFemale) {
-                while (ladyIndex < ladyTeachers.length) {
-                    const teacher = ladyTeachers[ladyIndex];
-                    if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
-                        const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
-                        allocations[shiftKey][room.id].push(origTeacher);
-                        lastShiftAssigned.set(String(teacher.id), true);
-                        if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
-                        if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                        teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                        teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                        ladyIndex++;
-                        allocatedCount++;
-                        assigned = true;
-                        assignedFemale = true;
-                        assignedTeachers.add(String(teacher.id));
-                        console.log('ALLOCATE: Assigning teacher', teacher.id, teacher.name, 'to', shiftKey, room.id);
-                        break;
-                    }
-                    ladyIndex++;
-                }
-            } else if (allocatedCount === 0 && maleTeachers.length > 0 && !assignedMale) {
-                while (maleIndex < maleTeachers.length) {
-                    const teacher = maleTeachers[maleIndex];
-                    if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
-                        const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
-                        allocations[shiftKey][room.id].push(origTeacher);
-                        lastShiftAssigned.set(String(teacher.id), true);
-                        if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
-                        if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                        teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                        teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                        maleIndex++;
-                        allocatedCount++;
-                        assigned = true;
-                        assignedMale = true;
-                        assignedTeachers.add(String(teacher.id));
-                        console.log('ALLOCATE: Assigning teacher', teacher.id, teacher.name, 'to', shiftKey, room.id);
-                        break;
-                    }
-                    maleIndex++;
-                }
-            } else {
-                // Fill remaining slots with any available teacher (lady or male)
-                while (ladyIndex < ladyTeachers.length && allocatedCount < requiredTeachers) {
-                    const teacher = ladyTeachers[ladyIndex];
-                    if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
-                        const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
-                        allocations[shiftKey][room.id].push(origTeacher);
-                        lastShiftAssigned.set(String(teacher.id), true);
-                        if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
-                        if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                        teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                        teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                        ladyIndex++;
-                        allocatedCount++;
-                        assigned = true;
-                        assignedTeachers.add(String(teacher.id));
-                        console.log('ALLOCATE: Assigning teacher', teacher.id, teacher.name, 'to', shiftKey, room.id);
-                        break;
-                    }
-                    ladyIndex++;
-                }
-                while (!assigned && maleIndex < maleTeachers.length && allocatedCount < requiredTeachers) {
-                    const teacher = maleTeachers[maleIndex];
-                    if (canAssign(teacher.id) && !avoidTeacherIds.has(String(teacher.id)) && !assignedTeachers.has(String(teacher.id))) {
-                        const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
-                        allocations[shiftKey][room.id].push(origTeacher);
-                        lastShiftAssigned.set(String(teacher.id), true);
-                        if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
-                        if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                        teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                        teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                        maleIndex++;
-                        allocatedCount++;
-                        assigned = true;
-                        assignedTeachers.add(String(teacher.id));
-                        console.log('ALLOCATE: Assigning teacher', teacher.id, teacher.name, 'to', shiftKey, room.id);
-                        break;
-                    }
-                    maleIndex++;
-                }
-            }
-            // If not enough teachers, allow assignment even if repeated, but pick those with lowest total duties
-            if (!assigned) {
-                let allAvailable = ladyTeachers.concat(maleTeachers).filter(t => canAssign(t.id) && !assignedTeachers.has(String(t.id)));
-                if (allAvailable.length > 0) {
-                    allAvailable.sort((a, b) => (teacherDutyCount[a.id] || 0) - (teacherDutyCount[b.id] || 0));
-                    const teacher = allAvailable[0];
-                    const origTeacher = latestTeacherMap[String(teacher.id)] || teacher;
-                    allocations[shiftKey][room.id].push(origTeacher);
-                    lastShiftAssigned.set(String(teacher.id), true);
-                    if (!teacherRoomHistory[teacher.id]) teacherRoomHistory[teacher.id] = {};
-                    if (!teacherRoomHistory[teacher.id][room.id]) teacherRoomHistory[teacher.id][room.id] = [];
-                    teacherRoomHistory[teacher.id][room.id].push(shiftKey);
-                    teacherDutyCount[teacher.id] = (teacherDutyCount[teacher.id] || 0) + 1;
-                    allocatedCount++;
-                    assignedTeachers.add(String(teacher.id));
-                    assigned = true;
-                    console.log('ALLOCATE: Assigning teacher', teacher.id, teacher.name, 'to', shiftKey, room.id);
-                } else {
-                    allocations[shiftKey][room.id].push({ error: "Not enough teachers available" });
-                    break;
-                }
-            }
-        }
-    });
     return allocations;
 }
 
